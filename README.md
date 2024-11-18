@@ -3,7 +3,7 @@
 ![PyPI Version](https://img.shields.io/pypi/v/glossbert)
 ![Python Versions](https://img.shields.io/pypi/pyversions/glossbert)
 ![License](https://img.shields.io/pypi/l/glossbert)
-![Build Status](https://github.com/cruzlorite/glossbert/actions/workflows/ci.yml/badge.svg)
+[![Publish Python 🐍 distribution 📦 to PyPI](https://github.com/cruzlorite/glossbert/actions/workflows/publish-pypi.yaml/badge.svg)](https://github.com/cruzlorite/glossbert/actions/workflows/publish-pypi.yaml)
 ![Coverage](https://img.shields.io/codecov/c/github/username/glossbert)
 ![Last Commit](https://img.shields.io/github/last-commit/username/glossbert)
 
