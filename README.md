@@ -1,36 +1,52 @@
 # GlossBERT Python Wrapper Class
 
-This python package offers a wrapper class to use [GlossBERT](https://github.com/HSLCY/GlossBERT/tree/master) easily.
+This Python package provides a convenient wrapper for using [GlossBERT](https://github.com/HSLCY/GlossBERT/tree/master), allowing you to easily perform word sense disambiguation (WSD) by searching WordNet through NLTK.
 
+The source code found in this repository is an adaptation from: https://github.com/HSLCY/GlossBERT/blob/master/run_infer_demo_sent_cls_ws_with_nltk.py
 
-# Instalation
+## Features
+- Simplifies the use of GlossBERT for WSD tasks.
+- Provides integration with WordNet via NLTK.
 
-Using `pip`:
+## Installation
+
+Install the package using pip:
 
 ```bash
 pip install glossbert
 ```
 
-From github:
+Alternatively, install directly from the GitHub repository:
 
 ```bash
-pip install glossbert
+pip install git+https://github.com/cruzlorite/glossbert.git
 ```
 
-# Usage
+## Usage
 
-Import the `GlossBERT` class from the `glossbert` package:
+Here is an example of how to use the GlossBERT class:
 
 ```python
->>> from glossbert import GlossBERT
->>>
->>> gloss = GlossBERT()
->>> sent = "I love dogs!"
->>> result = gloss(sent, 7, 11, "dogs")
->>> print(result)
->>>
+from glossbert import GlossBERT
+
+# Initialize the GlossBERT instance
+gloss = GlossBERT()
+
+# Define a sentence and specify the target word
+sent = "I love dogs!"
+start_idx, end_idx, target_word = 7, 11, "dogs"
+
+# Perform word sense disambiguation
+result = gloss(sent, start_idx, end_idx, target_word)
+
+# Print the result
+print(result)
 ```
 
-# License
+## License
 
-This project is licensed under the MIT license, like the original [GlossBERT](https://github.com/HSLCY/GlossBERT/tree/master).
+This project is licensed under the [MIT License](https://opensource.org/license/mit), consistent with the original [GlossBERT project](https://github.com/HSLCY/GlossBERT/tree/master).
+
+## Acknowledgements
+
+Special thanks to the authors of the original [GlossBERT](https://github.com/HSLCY/GlossBERT/tree/master) for their foundational work.
