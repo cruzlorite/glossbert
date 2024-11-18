@@ -32,19 +32,27 @@ pip install git+https://github.com/cruzlorite/glossbert.git
 Here is an example of how to use the GlossBERT class:
 
 ```python
-from glossbert import GlossBERT
-
-# initialize the GlossBERT instance
-gloss = GlossBERT()
-
-# define a sentence and specify the target word
-sent = "I love dogs!"
-start_idx, end_idx, target_word = 7, 11, "dog"
-
-# perform word sense disambiguation
-result = gloss(sent, start_idx, end_idx, target_word)
-
-print(result)
+>>> from glossbert import GlossBERT
+>>> 
+>>> # initialize the GlossBERT instance
+>>> gloss = GlossBERT()
+>>> 
+>>> # define a sentence and specify the target word
+>>> sent = "I love dogs!"
+>>> start_idx, end_idx, target_word = 7, 11, "dog"
+>>> 
+>>> # perform word sense disambiguation
+>>> gloss(sent, start_idx, end_idx, target_word)
+[
+    (0.9973864, Synset('dog.n.01')),
+    (0.025929835, Synset('frank.n.02')),
+    (0.0030947044, Synset('dog.n.03')),
+    (0.0024504508, Synset('cad.n.01')),
+    (0.001387376, Synset('andiron.n.01')),
+    (0.00057538506, Synset('pawl.n.01')),
+    (0.0005529578, Synset('chase.v.01')),
+    (0.00046094437, Synset('frump.n.01'))
+]
 ```
 
 ## License
