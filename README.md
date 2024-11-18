@@ -9,10 +9,6 @@ The source code in this repository is adapted from [this script](https://github.
 - Simplifies the use of GlossBERT for WSD tasks.
 - Provides integration with WordNet via NLTK.
 
-## TODO
-
-- [ ] Implement batch processing support in GlossBERT to enable more efficient inference for multiple words.
-
 ## Installation
 
 Install the package using pip:
