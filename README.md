@@ -1,4 +1,4 @@
-# GlossBERT Python Wrapper Class
+# GlossBERT Wrapper Class
 
 This Python package provides a convenient wrapper for using [GlossBERT](https://github.com/HSLCY/GlossBERT/tree/master), allowing you to easily perform word sense disambiguation (WSD) by searching WordNet through NLTK.
 
