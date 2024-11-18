@@ -1,5 +1,12 @@
 # GlossBERT Wrapper Class
 
+![PyPI Version](https://img.shields.io/pypi/v/glossbert)
+![Python Versions](https://img.shields.io/pypi/pyversions/glossbert)
+![License](https://img.shields.io/pypi/l/glossbert)
+![Build Status](https://github.com/cruzlorite/glossbert/actions/workflows/ci.yml/badge.svg)
+![Coverage](https://img.shields.io/codecov/c/github/username/glossbert)
+![Last Commit](https://img.shields.io/github/last-commit/username/glossbert)
+
 This Python package provides a convenient wrapper for using [GlossBERT](https://github.com/HSLCY/GlossBERT/tree/master), allowing you to easily perform word sense disambiguation (WSD) by searching WordNet through NLTK.
 
 The source code in this repository is adapted from [this script](https://github.com/HSLCY/GlossBERT/blob/master/run_infer_demo_sent_cls_ws_with_nltk.py) from the original GlossBERT project.
