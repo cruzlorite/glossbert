@@ -4,8 +4,6 @@
 ![Python Versions](https://img.shields.io/pypi/pyversions/glossbert)
 ![License](https://img.shields.io/pypi/l/glossbert)
 [![Publish Python 🐍 distribution 📦 to PyPI](https://github.com/cruzlorite/glossbert/actions/workflows/publish-pypi.yaml/badge.svg)](https://github.com/cruzlorite/glossbert/actions/workflows/publish-pypi.yaml)
-![Coverage](https://img.shields.io/codecov/c/github/username/glossbert)
-![Last Commit](https://img.shields.io/github/last-commit/username/glossbert)
 
 This Python package provides a convenient wrapper for using [GlossBERT](https://github.com/HSLCY/GlossBERT/tree/master), allowing you to easily perform word sense disambiguation (WSD) by searching WordNet through NLTK.
 
