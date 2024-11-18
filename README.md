@@ -2,7 +2,7 @@
 
 This Python package provides a convenient wrapper for using [GlossBERT](https://github.com/HSLCY/GlossBERT/tree/master), allowing you to easily perform word sense disambiguation (WSD) by searching WordNet through NLTK.
 
-The source code found in this repository is an adaptation from: https://github.com/HSLCY/GlossBERT/blob/master/run_infer_demo_sent_cls_ws_with_nltk.py
+The source code in this repository is adapted from [this script](https://github.com/HSLCY/GlossBERT/blob/master/run_infer_demo_sent_cls_ws_with_nltk.py) from the original GlossBERT project.
 
 ## Features
 
