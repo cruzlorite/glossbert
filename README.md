@@ -34,17 +34,16 @@ Here is an example of how to use the GlossBERT class:
 ```python
 from glossbert import GlossBERT
 
-# Initialize the GlossBERT instance
+# initialize the GlossBERT instance
 gloss = GlossBERT()
 
-# Define a sentence and specify the target word
+# define a sentence and specify the target word
 sent = "I love dogs!"
-start_idx, end_idx, target_word = 7, 11, "dogs"
+start_idx, end_idx, target_word = 7, 11, "dog"
 
-# Perform word sense disambiguation
+# perform word sense disambiguation
 result = gloss(sent, start_idx, end_idx, target_word)
 
-# Print the result
 print(result)
 ```
 
