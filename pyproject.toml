@@ -17,15 +17,10 @@ classifiers = [
 ]
 requires-python = ">=3.9"
 dependencies = [
-    "pydantic",
-    "jinja2"
+    "torch",
+    "transformers",
+    "nltk"
 ]
-
-[project.scripts]
-run = "bin:run"
-
-[tool.setuptools.package-data]
-"*" = ['*.json', "*.txt"]
 
 [project.urls]
 Homepage = "https://github.com/cruzlorite/glossbert"
