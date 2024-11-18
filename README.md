@@ -13,7 +13,7 @@ The source code in this repository is adapted from [this script](https://github.
 
 Install the package using pip:
 
-```bash
+```bash 
 pip install glossbert
 ```
 
