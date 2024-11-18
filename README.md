@@ -5,8 +5,13 @@ This Python package provides a convenient wrapper for using [GlossBERT](https://
 The source code found in this repository is an adaptation from: https://github.com/HSLCY/GlossBERT/blob/master/run_infer_demo_sent_cls_ws_with_nltk.py
 
 ## Features
+
 - Simplifies the use of GlossBERT for WSD tasks.
 - Provides integration with WordNet via NLTK.
+
+## TODO
+
+- [ ] Implement batch processing support in GlossBERT to enable more efficient inference for multiple words.
 
 ## Installation
 
