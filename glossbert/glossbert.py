@@ -103,9 +103,9 @@ class GlossBERT:
         
         # get synsets of the target word
         if pos is None:
-            synsets = wn.synsets(target)
+            synsets = wn.synsets(lemma)
         else:
-            synsets = wn.synsets(target, pos=pos)
+            synsets = wn.synsets(lemma, pos=pos)
         
         # check if there are synsets, otherwise return an empty list
         if len(synsets) == 0:
@@ -122,7 +122,7 @@ class GlossBERT:
         candidates = []
         for syn in synsets:
             gloss = syn.definition()
-            candidates.append((_sentence, f"{target} : {gloss}", syn, lemma, gloss))
+            candidates.append((_sentence, f"{target} : {gloss}", syn, target, gloss))
         
         return candidates
     
