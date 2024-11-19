@@ -185,6 +185,11 @@ class GlossBERT:
             Tuple[str, str]: sense key and gloss of the target word
         """
         candidates = self._context_gloss_pairs(sentence, start, end, lemma, pos)
+        
+        # if candidates is empty, return None
+        if len(candidates) == 0:
+            return []
+        
         features = self._convert_to_features(candidates)
         
         # convert features to tensors
