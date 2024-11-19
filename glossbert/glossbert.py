@@ -101,18 +101,22 @@ class GlossBERT:
         # check the target word indices are valid
         assert 0 <= start and start < end and end <= len(sentence), "word indices are out of range"
         
+        # get synsets of the target word
+        if pos is None:
+            synsets = wn.synsets(target)
+        else:
+            synsets = wn.synsets(target, pos=pos)
+        
+        # check if there are synsets, otherwise return an empty list
+        if len(synsets) == 0:
+            return []
+        
         target = sentence[start:end]
         try:
             # this will raise an exception if the target word is at the end of the sentence
             _sentence = sentence[:start] + '"' + target + '"' + sentence[end:]
         except:
             _sentence = sentence[:start] + '"' + target + '"'
-        
-        # get synsets of the target word
-        if pos is None:
-            synsets = wn.synsets(target)
-        else:
-            synsets = wn.synsets(target, pos=pos)
         
         # construct context gloss pairs
         candidates = []
