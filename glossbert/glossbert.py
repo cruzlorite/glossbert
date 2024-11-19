@@ -118,7 +118,7 @@ class GlossBERT:
         candidates = []
         for syn in synsets:
             gloss = syn.definition()
-            candidates.append((_sentence, f"{target} : {gloss}", syn, target, gloss))
+            candidates.append((_sentence, f"{target} : {gloss}", syn, lemma, gloss))
         
         return candidates
     
